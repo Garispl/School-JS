@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 3</title>
+</head>
+<body>
+
+	<button onClick='clickEvent()'>Change light.</button>
+	<br>
+	<br>
+	<center>
+		<image src='./images/off.png' id='light'></image>
+	</center>
+	
+
+	<script>
+	var score=0;
+	function clickEvent()
+	{
+		score = score + 1;
+
+		if(score == 1)
+		{
+			document.getElementByID('light').src='./images/red.png'
+		}
+		if(score == 2)
+		{
+			document.getElementByID('light').src='./images/amber.png'
+		}
+		if(score == 2)
+		{
+			document.getElementByID('light').src='./images/green.png'
+		}
+		if(score == 4)
+		{
+			document.getElementByID('light').src='./images/amber.png'
+		}
+		if(score == 5)
+		{
+			document.getElementByID('light').src='./images/green.png'
+		}
+		if(score == 6)
+		{
+			document.getElementByID('light').src='./images/off.png'
+			score = score -6;
+		}
+	}
+
+	</script>
+
+</body>
+</html>
